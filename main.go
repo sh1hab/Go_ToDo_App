@@ -31,7 +31,6 @@ func init(){
 	if err != nil {
 		panic("failed to connect database")
 	}
-
 	database.AutoMigrate( &modelTodo{} )
 }
 
